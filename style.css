@@ -25,6 +25,7 @@ header p {
   font-size: 25px;
 }
 
+/* pads */
 .pads {
   background: lightblue;
   width: 100%;
@@ -54,16 +55,7 @@ header p {
   background: #60c2d3;
 }
 
-.visual > div {
-  position: absolute;
-  bottom: 0%;
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  transform: scale(1);
-  z-index: -1;
-}
-
+/* animtation bubble */
 @keyframes jump {
   0% {
     bottom: 0%;
@@ -73,9 +65,22 @@ header p {
     bottom: 50%;
     left: 50%;
   }
-
+  
   100% {
     bottom: 00%;
     left: 80%;
   }
+}
+
+
+/* colorful balls style */
+.visual > div {
+  position: absolute;
+  bottom: 0%;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  transform: scale(1);
+  /* z-index puts bubbles behind the pads */
+  z-index: -1;
 }
